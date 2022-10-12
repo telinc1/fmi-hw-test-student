@@ -1,0 +1,6 @@
+Compiler output:
+g++: error: .git.cpp: No such file or directory
+g++: fatal error: no input files
+compilation terminated.
+
+Compilation failed. Skipping tests.
