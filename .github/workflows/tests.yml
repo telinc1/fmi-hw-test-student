@@ -20,7 +20,7 @@ jobs:
       - name: Make temporary directory
         id: temp
         run: |
-          echo "path="$(mktemp -d tmp.XXXXXXX)"" >> $GITHUB_OUTPUT
+          echo "path="$(mktemp -d)"" >> $GITHUB_OUTPUT
 
       - name: Download tests
         run: |
