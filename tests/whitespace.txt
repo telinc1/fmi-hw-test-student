@@ -1,3 +1,6 @@
+Tests ran on: Wed Oct 12 14:26:54 UTC 2022
+
+
 Compiler output:
 
 Compilation OK.
@@ -11,5 +14,14 @@ Hello, world!
 Actual:
 Hello, world!
 OK
+
+
+Test: whitespace
+------
+Expected:
+
+Actual:
+
+Failed
 
 
