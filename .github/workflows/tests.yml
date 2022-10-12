@@ -28,7 +28,7 @@ jobs:
 
       - name: Run tests
         run: |
-          "${{ steps.temp.outputs.path }}"/tests.sh "${{ steps.temp.outputs.path }}"
+          ${{ steps.temp.outputs.path }}/tests.sh ${{ steps.temp.outputs.path }}
 
       - name: Push results
         run: |
