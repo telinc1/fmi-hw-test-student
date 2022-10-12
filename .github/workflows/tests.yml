@@ -25,10 +25,11 @@ jobs:
       - name: Download tests
         run: |
           git clone $tests_repo "${{ steps.temp.outputs.path }}"
+          chmod +x ${{ steps.temp.outputs.path }}/tests.sh
 
       - name: Run tests
+        continue-on-error: true
         run: |
-          chmod +x ${{ steps.temp.outputs.path }}/tests.sh
           ${{ steps.temp.outputs.path }}/tests.sh ${{ steps.temp.outputs.path }}
 
       - name: Push results
