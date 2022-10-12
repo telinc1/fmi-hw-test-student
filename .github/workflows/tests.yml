@@ -28,11 +28,11 @@ jobs:
           chmod +x ${{ steps.temp.outputs.path }}/tests.sh
 
       - name: Run tests
-        continue-on-error: true
         run: |
           ${{ steps.temp.outputs.path }}/tests.sh ${{ steps.temp.outputs.path }}
 
       - name: Push results
+        if: success() || failure()
         run: |
           git add tests
           git commit -m "Automatic test results"
