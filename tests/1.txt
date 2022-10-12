@@ -1,0 +1,27 @@
+Compiler output:
+
+Compilation OK.
+
+
+Test: and-other-tests-here
+------
+Expected:
+5
+
+Actual:
+5
+
+OK
+
+
+Test: test-name-1
+------
+Expected:
+6
+
+Actual:
+6
+
+OK
+
+

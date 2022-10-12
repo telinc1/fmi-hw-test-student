@@ -1,0 +1,15 @@
+Compiler output:
+
+Compilation OK.
+
+
+Test: output
+------
+Expected:
+Hello, world!
+
+Actual:
+Hello, world!
+OK
+
+
